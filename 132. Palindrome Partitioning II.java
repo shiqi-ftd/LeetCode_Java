@@ -40,7 +40,7 @@ public class Solution {
         }
         for (int i = 2; i <= len; i++) {
             for(int j = 0; j < i; j++) {
-                if (cache[j][i - 1]) {
+                if (cache[j][i - 1]) { 
                     dp[i] = Math.min(dp[j] + 1, dp[i]);
                 }
             }
